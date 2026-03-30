@@ -1,14 +1,19 @@
 ### **Assignment 2 Report**  
 #### CSCY 4743: Cyber and Infrastructure Defense, Spring 2026
 
-**Name & Student ID**: [Full Name], [Student ID]  
+**Name & Student ID**: John Paul Bennett Jr., 110412273  
 
 ---
 
 # **Section 1: Conceptual Assignments**
 
 ### **1. ARP Poisoning & Advanced MITM Techniques**  
-*(200–400 words response here)*
+Attackers have developed several ways to bypass traditional ARP defenses such as static ARP entries and Dynamic ARP Inspection (DAI). One method is **MAC spoofing combined with VLAN hopping**, where an attacker impersonates a trusted device and gains access to a protected VLAN. Another approach involves targeting the control plane—for example, exploiting misconfigured switches or flooding the switch’s CAM table (CAM table overflow), forcing it into a hub-like behavior and enabling packet sniffing. Attackers may also exploit weaknesses in DAI deployments, such as untrusted ports incorrectly marked as trusted or gaps in DHCP snooping bindings, allowing forged ARP replies to pass validation.
+
+Proxy ARP manipulation further enhances an attacker’s ability to intercept traffic. In proxy ARP, a device responds to ARP requests on behalf of another host. An attacker can abuse this by falsely advertising themselves as the gateway or another key node, even across subnet boundaries. This allows them to redirect traffic not just within a local subnet, but between subnets, effectively expanding the scope of a Man-in-the-Middle (MITM) attack. By positioning themselves as a “legitimate” intermediary, attackers can silently inspect, modify, or drop packets.
+
+Even in a fully switched network with VLAN segmentation, ARP-based MITM attacks are still possible under certain conditions. If an attacker gains access to a specific VLAN, they can still poison ARP caches within that VLAN. Additionally, misconfigurations such as improperly isolated VLANs, trunk ports exposed to end devices, or lack of private VLANs can allow lateral movement. Techniques like VLAN hopping (via double tagging or switch spoofing) may let an attacker reach other VLANs. Once inside, they can perform ARP poisoning locally. Furthermore, if inter-VLAN routing relies on shared gateways, compromising ARP resolution for that gateway enables interception of traffic flowing between VLANs.
+
 
 ### **2. ARP Spoofing in IPv6 Networks**  
 *(200–400 words response here)*
