@@ -258,7 +258,9 @@ By combining technical controls, automation, monitoring, and human awareness, an
 
 ### **Deliverables**
 #### **Screenshots**
-- [Insert required screenshots]
+![Screenshot](Screenshots/ARP_Table_Before_Attack.png)
+![Screenshot](Screenshots/ARP_Spoof_Command.png)
+![Screenshot](Screenshots/ARP_Table_After_Attack.png)
 
 #### **Response to Analysis Questions**  
 **Answer the following (400–600 words total):**
@@ -277,7 +279,10 @@ Preventing ARP poisoning involves a combination of technical controls and good n
 
 ### **Deliverables**
 #### **Screenshots**
-- [Insert required screenshots]
+![Screenshot](Screenshots/MetasploitableCPUUsageScreenshot1.png)
+![Screenshot](Screenshots/MetasploitableCPUUsageScreenshot2.png)
+![Screenshot](Screenshots/WiresharkCapture1.png)
+![Screenshot](Screenshots/WiresharkCapture2.png)
 
 #### **Response to Analysis Questions**  
 **Answer the following (400–600 words total):**
@@ -299,7 +304,9 @@ The version of the attack that would be harder to block with traditional firewal
 
 ### **Deliverables**
 #### **Screenshots**
-- [Insert required screenshots]
+![Screenshot](Screenshots/Identifying_Vulnerable_Services.png)
+![Screenshot](Screenshots/Metasploit_Successful_Exploitation.png)
+![Screenshot](Screenshots/Remote_Shell_Access.png)
 
 #### **Response to Analysis Questions**  
 **Answer the following (400–600 words total):**
@@ -323,7 +330,8 @@ Additionally, network security controls play a key role. Firewalls should be con
 
 ### **Deliverables**
 #### **Screenshots**
-- [Insert required screenshots]
+![Screenshot](Screenshots/WiresharkCaptureHTTP.png)
+![Screenshot](Screenshots/WiresharkCaptureHTTPPlaintext.png)
 
 #### **Response to Analysis Questions**  
 **Answer the following (400–600 words total):**
